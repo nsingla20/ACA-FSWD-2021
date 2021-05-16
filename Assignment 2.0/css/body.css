@@ -1,0 +1,80 @@
+.container{
+    padding:5px 5px;
+    overflow: hidden;
+    display: block;
+    width:100%;
+    position: relative;
+    
+    background-color: rgba(16, 28, 37, 0.623);
+    transition: transform 1s, outline 1s,width 1s,border-radius 1s;
+}
+.container:hover{
+    background-color: rgb(7, 2, 1);
+    outline: 5px solid rgba(92, 8, 226, 0.459);
+    transform: scale(1.1,1.1);
+}
+.container p{
+    background-color: transparent;
+    display: block;
+    width: 100%;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(223, 215, 215);
+}
+#main{
+    display: flex;
+    float: right;
+    overflow: hidden;
+    background-color: rgba(16, 28, 37, 0.623);
+    width: 100%;
+}
+/* #back{
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+.img{
+    flex-shrink: 0;
+    float: left;
+    scroll-snap-align: start;
+}
+.img img{
+    width: 100%;
+} */
+.side{
+    width: 100%;
+    padding: auto;
+}
+@media only screen and (min-width: 1280px){
+    .container{
+        margin: 30px 30px;
+        float: left;
+        border-radius: 60px;
+        width: 300px;
+    }
+    /* #back{
+        height: 700px;
+    } */
+    .side{
+        float:left;
+        width: 360px;
+        position: fixed;
+    }
+    .side .container{
+        position: relative;
+    }
+    #main{
+        max-width:70% ;
+        margin: 30px 30px;
+        border-radius: 60px;
+    }
+}
+/* #main div .img{
+    width: 100%;
+} */
