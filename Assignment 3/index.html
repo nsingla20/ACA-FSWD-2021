@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Server</title>
+        <style>
+            table, th, td {
+            border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <table style="margin: auto;margin-top: 30vh; transform: scale(2,2);">
+            <tr>
+                <th>Register</th>
+                <th>Login</th>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><input id="get_token" type="button" value="Get Token"></td>
+                <td style="border: 0px;"><input id="token2" type="text" placeholder="Input Token"></td>
+            </tr>
+            <tr>
+                <td><input id="username" type="text" placeholder="Username"><br>
+                    <input id="data" type="text" placeholder="Data"><br>
+                    <input id="token1" type="text" placeholder="Token">
+                </td>
+                <td>
+                    <input type="text" placeholder="Username" id="user2" readonly style="margin-bottom: 10px;"><br>
+                    <input type="text" placeholder="Data" id="dat2" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><input id="register" type="button" value="Register"></td>
+                <td style="text-align: center;"><input id="get_data" type="button" value="Get Data"></td>
+            </tr>
+        </table>
+    </body>
+    <script type="text/javascript" src="script.js"></script>
+</html>
